@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link rel="shortcut icon" href="images/ticket.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- MAIN -->
+    <main class="container">
+        <section class="ticket">
+            <div class="content__group">
+                <h1 class="content__title">Compre seu ingresso</h1>
+                <img src="images/logo-ticket.png" alt="Logo de Ingresso"/>
+            </div>
+
+            <div id="mensage-erro"></div>
+
+            <form class="ticket__form">
+                <div class="ticket__form-group select">
+                    <label class="ticket__form-label">Escolha o tipo</label>
+                    <select class="ticket__form-input ticket__form-input--select" id="place"></select>
+                </div>
+
+                <div class="ticket__form-group input">
+                    <label class="ticket__form-label">Qtde.</label>
+                    <input type="number" id="amount" placeholder="00" class="ticket__form-input ticket__form-input--input"/>
+                </div>
+
+                <div class="ticket__form-group">
+                    <button class="ticket__form-button" id="button-ticket" onclick="buyTicket(event)">Comprar</button>
+                </div>
+            </form>
+        </section>
+
+        <hr class="line"/>
+
+        <section class="result-ticket">
+            <h2 class="content__subtitle">Quantidade disponível</h2>
+
+            <ul class="content__menu-list" id="list-tickets"></ul>
+
+            <img src="images/ticket.svg" alt="Imagem da logo de ingresso" class="content__image"/>
+        </section>
+    </main>
+    <!-- MAIN -->
+
+    <script src="js/app.js" type="module" defer></script>
+</body>
+</html>

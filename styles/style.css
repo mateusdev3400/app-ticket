@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Inter&display=swap');
+
+@import url('./main/main.css');
+
+:root {
+    --black-color: #01080e;
+    --blue-color: #041832;
+    --blue-color-2: #1875E8;
+    --gray-color: #878383;
+    --green-color: #00F4BF;
+    --white-color: #FFFFFF;
+
+    --chakra-petch-font: "Chakra Petch", sans-serif;
+    --inter-font: "Inter", sans-serif;
+}
+
+body {
+    background: 
+        linear-gradient(180deg, var(--black-color) 1%, var(--blue-color) 39%, var(--black-color) 88%);
+    color: var(--white-color);
+    height: 100vh;
+    padding: 3em 2em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}

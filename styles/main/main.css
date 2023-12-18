@@ -1,0 +1,44 @@
+@import url('./content/content.css');
+@import url('./form/form.css');
+
+.container {
+    background: url("../../images/background-container.png");
+    background-size: cover;
+    border: 2px solid var(--blue-color-2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 1em 2em;
+}
+
+.ticket {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.result-ticket {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+#mensage-erro {
+    border-bottom: 2px solid var(--white-color);
+    color: var(--green-color);
+    font-family: var(--inter-font);
+    font-size: 22px;
+    padding: 0.5em 0;
+}
+
+@media screen and (max-width: 1136px) {
+    .result-ticket {
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-around;
+    }
+}
